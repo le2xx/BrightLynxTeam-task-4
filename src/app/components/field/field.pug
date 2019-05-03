@@ -1,0 +1,9 @@
+.field
+	- let i = 0;
+	- let flag = false;
+		while i < 64
+			if i % 8 === 0
+				- flag = !flag
+			div(class=(flag ? 'field__item' : 'field__item field__item_color_black'))
+			- i++
+			-	flag = !flag

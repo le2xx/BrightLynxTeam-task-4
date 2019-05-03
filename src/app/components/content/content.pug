@@ -1,0 +1,18 @@
+.content
+	-
+		const horizontal = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+		const vertical = [1, 2, 3, 4, 5, 6, 7, 8].reverse();
+	.content__h
+		each val in horizontal
+			.content__h-el= val
+	.content__wrap
+		.content__v
+			each val in vertical
+				.content__v-el= val
+		.content__field
+		.content__v
+			each val in vertical
+				.content__v-el= val
+	.content__h
+		each val in horizontal
+			.content__h-el= val
